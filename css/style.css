@@ -30,7 +30,7 @@ body{
 .content::before{
 	content: "";
 	position: absolute;
-	background-color: #58C5A3FF;
+	background-color: #58AF9B;
 	width: 40%;
 	height: 100%;
 }
@@ -43,6 +43,10 @@ body{
 
 .title-primary{
 	color: #fff;
+}
+
+.title-second{
+	color: #58AF9B;
 }
 
 .description{
@@ -72,7 +76,7 @@ body{
 
 .btn-primary:hover{
 	background-color: #fff;
-	color: #58C5A3FF;
+	color: #58AF9B;
 }
 
 .first-content{
@@ -87,10 +91,14 @@ body{
 
 .second-column{
 	flex: 2 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .list-social-media{
 	display: flex;
+	list-style-type: none;
 }
 
 .form{
