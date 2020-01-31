@@ -223,9 +223,16 @@ body{
 .sign-in-js .first-content .first-column,
 .sign-in-js .first-content .second-column{
 	z-index: -1;
+
+	/* Deslocamento do conteúdo atrás do Content:Before*/
+	position: relative;
+	animation: conteudo 1s;
 }
 
-.sign-in-js .second-content .first-column,
+.sign-in-js .second-content .first-column{
+	z-index: 14;
+}
+
 .sign-in-js .second-content .second-column{
 	z-index: 12;
 }
@@ -236,14 +243,84 @@ body{
 	border-bottom-right-radius: 15px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+	animation: slidein 2s;
+	z-index: 13;
+}
+
+.sign-up-js .content::before{
+	animation: slideout 2s;
+	z-index: 13;	
 }
 
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column{
 	z-index: -1;
+
+	/* Deslocamento do conteúdo atrás do Content:Before*/
+	position: relative;
+	animation: conteudo 1s;
 }
 
-.sign-up-js .first-content .first-column,
+.sign-up-js .first-content .first-column{
+	z-index: 14;
+}
+
 .sign-up-js .first-content .second-column{
 	z-index: 12;
+}
+
+/* Animação do conteúdo atrás do content:before*/
+@keyframes conteudo{
+	from{
+		left: 0;
+		opacity: 1;
+		z-index: 12;
+	}
+
+	50%{
+		left: -80;
+		opacity: 0.5;
+	}
+
+	to{
+		left: -110px
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+/* Animação CSS*/
+
+@keyframes slidein {
+	from {
+		left: 0;
+		width: 40%;
+	}
+	
+	50%{
+		left: 20%
+		width: 50%;
+	}	
+
+	to {
+		left: 60%;
+		width: 40%;
+	}
+}
+
+@keyframes slideout {
+	from {
+		left: 60%;
+		width: 40%;
+	}
+	
+	50%{
+		left: 20%
+		width: 50%;
+	}	
+
+	to {
+		left: 0;
+		width: 40%;		
+	}
 }
