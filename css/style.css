@@ -20,7 +20,7 @@ body{
 .content{
 	background-color: #fff;
 	position: relative;	
-	width: 960px;
+	width: 1000px;
 	height: 50%;
 	border-radius: 15px;
 	justify-content: space-between;
@@ -79,7 +79,7 @@ body{
 	cursor: pointer;
 	width: 150px;
 	align-self: center;
-	margin: 1rem 0;
+	margin: 0.4rem 0;
 }
 
 .btn-primary{
@@ -107,21 +107,23 @@ body{
 	display: none;
 }
 
-.first-column{
-	text-align: center;
-	flex: 1 0 auto;
-	z-index: 10;
+.first-column {
+    text-align: center;
+    width: 40%;
+    /* flex: 1 0 auto; */
+    z-index: 10;
 }
 
-.second-column{
-	flex: 2 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.second-column {
+    /* flex: 2 0 auto; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social-media{
-	margin: 2rem 0;
+	margin: 1rem 0;
 }
 
 .link-social-media:not(:first-child){
