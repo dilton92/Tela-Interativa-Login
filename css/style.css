@@ -216,7 +216,7 @@ body{
 }
 
 .forgot::first-letter{
-	/* A Pseudo Classe "::first-letter" coloca em caixa alta a primeira letra da frase da Tag*/
+	/* A Pseudo Classe "::first-letter" coloca em caixa alta a primeira letra da frase da Tag. */
 	text-transform: capitalize; 
 }
 
@@ -232,6 +232,10 @@ body{
 
 .sign-in-js .content::before{
 	left: 60%;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 .sign-up-js .second-content .first-column,
@@ -242,8 +246,4 @@ body{
 .sign-up-js .first-content .first-column,
 .sign-up-js .first-content .second-column{
 	z-index: 12;
-}
-
-.sign-up-js .content::before{
-	left: 60%;
 }
