@@ -85,6 +85,7 @@ body{
 .btn-primary{
 	background-color: transparent;
 	border: 1px solid #fff;
+	transition: background-color 0.4s;
 }
 
 .btn-primary:hover{
@@ -94,7 +95,8 @@ body{
 
 .btn-second{
 	background-color: #58AF9B;
-	border: 1px solid #58AF9B;	
+	border: 1px solid #58AF9B;
+	transition: background-color 0.4s;	
 }
 
 .btn-second:hover{
@@ -130,12 +132,13 @@ body{
 	margin-left: 10px;
 }
 
-/*
-.item-social-media:not(:first-child){
-	
+.item-social-media{
+	transition: background-color 0.4s;
 }
-*/
 
+/* O Hover poder ser declarado diretamente na classe "item-social-media" porém para demonstrar maneiras diferentes
+	de declarar seletores, vou deixar da forma abaixo
+*/
 .link-social-media:hover .item-social-media{
 	background-color: #58AF9B;
 	color: #fff;
@@ -169,6 +172,11 @@ body{
 	width: 100%;
 	border: none;
 	background-color: #ecf0f1;
+}
+
+/* Esse trecho abaixo remove a borda que o Chrome exibe no local onde está o cursor. */
+*:focus {
+    outline: none;
 }
 
 .label-input{
